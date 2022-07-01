@@ -1,0 +1,59 @@
+<!-- Typography.stories.mdx -->
+
+import { Meta, Typeset } from '@storybook/addon-docs/blocks';
+
+<Meta title="Design System/Typography" />
+
+export const typography = {
+  type: {
+    primary: 'Cambria, Georgia, serif',
+  },
+  weight: {
+    regular: '400',
+    bold: '700',
+    extrabold: '800',
+    black: '900',
+  },
+  size: {
+    s1: 8,
+    s2: 10,
+    s3: 12,
+    m1: 14,
+    m2: 16,
+    m3: 22,
+    l1: 24,
+    l2: 28,
+    l3: 32,
+    xl1: 36,
+    xl2: 45,
+    xl3: 57,
+  },
+};
+
+export const SampleText = 'undo is a new task manager for you\'re everyday needs';
+
+# Typography
+
+**Font:** Cambria
+
+**Weights:** 400(regular), 700(bold), 800(extrabold), 900(black)
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.s1),
+    Number(typography.size.s2),
+    Number(typography.size.s3),
+    Number(typography.size.m1),
+    Number(typography.size.m2),
+    Number(typography.size.m3),
+    Number(typography.size.l1),
+    Number(typography.size.l2),
+    Number(typography.size.l3),
+    Number(typography.size.xl1),
+    Number(typography.size.xl2),
+    Number(typography.size.xl3),
+  ]}
+  fontWeight={typography.weight.black}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>

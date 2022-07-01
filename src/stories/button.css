@@ -1,0 +1,110 @@
+.storybook-button {
+  font-family: 'Cambria', Georgia, serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  display: flex;
+  line-height: 1;
+  align-items: center;
+  gap: 8px;
+}
+
+.storybook-button--noIcon svg {
+  display: none;
+}
+
+.storybook-button--primary_icon svg,
+.storybook-button--secondary_icon svg,
+.storybook-button--link_icon svg {
+  display: block;
+}
+
+.storybook-button--primary,
+.storybook-button--active,
+.storybook-button--primary_icon svg > path {
+  color: white;
+  background-color: var(--primary);
+  fill: white;
+  border-radius: 5px;
+}
+
+
+
+.storybook-button--primary:hover {
+  background-color: #4958AB;
+  color: white;
+}
+
+
+.storybook-button--secondary,
+.storybook-button--secondary_icon svg > path {
+  border: 1px solid var(--secondary);
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--secondary);
+  fill: var(--secondary);
+}
+
+.storybook-button--secondary:hover {
+  text-decoration: underline;
+}
+
+.storybook-button--link,
+.storybook-button--link_icon svg > path {
+  background-color: transparent;
+  color: var(--secondary);
+  fill: var(--secondary);
+}
+
+.storybook-button--link:hover {
+  text-decoration: underline;
+}
+
+.storybook-button--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+
+.storybook-button--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+
+.storybook-button--large {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+
+.storybook-button--primary_disabled,
+.storybook-button--primary_disabled svg > path {
+  background-color: #CAC5CA;
+  color: #938F94;
+  fill: #938F94;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+.storybook-button--secondary_disabled,
+.storybook-button--secondary_disabled svg > path {
+  border: 1px solid #CAC5CA;
+  color: #938F94;
+  fill: #938F94;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.storybook-button--link_disabled,
+.storybook-button--link_disabled svg > path {
+  border: none;
+  color: #938F94;
+  fill: #938F94;
+  background-color: transparent;
+}
+
+.storybook-button--primary_disabled:hover,
+.storybook-button--secondary_disabled:hover,
+.storybook-button--link_disabled:hover {
+  cursor: auto;
+}
