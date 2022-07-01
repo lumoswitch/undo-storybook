@@ -51,7 +51,7 @@
 }
 
 .storybook-button--link,
-.storybook-button--link_icon svg > path {
+.storybook-button--link svg > path {
   background-color: transparent;
   color: var(--secondary);
   fill: var(--secondary);
@@ -80,8 +80,8 @@
 .storybook-button--primary_disabled,
 .storybook-button--primary_disabled svg > path {
   background-color: #CAC5CA;
-  color: #938F94;
-  fill: #938F94;
+  color: #2E2E2E;
+  fill: #2E2E2E;
   border-radius: 5px;
   border-color: transparent;
 }
@@ -89,8 +89,8 @@
 .storybook-button--secondary_disabled,
 .storybook-button--secondary_disabled svg > path {
   border: 1px solid #CAC5CA;
-  color: #938F94;
-  fill: #938F94;
+  color: #2E2E2E;
+  fill: #2E2E2E;
   border-radius: 5px;
   background-color: transparent;
 }
@@ -98,8 +98,8 @@
 .storybook-button--link_disabled,
 .storybook-button--link_disabled svg > path {
   border: none;
-  color: #938F94;
-  fill: #938F94;
+  color: #2E2E2E;
+  fill: #2E2E2E;
   background-color: transparent;
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './button.css';
-import '../index.css';
+import '../../index.css';
 
 /**
  * Primary UI component for user interaction
@@ -26,15 +26,17 @@ export const Button = ({ type, enabled, hasIcon, backgroundColor, size, label, .
 
 Button.propTypes = {
   /**
-   * Is this the principal call to action on the page?
+   * Is this button enabled?
    */
   enabled: PropTypes.bool,
-  type: PropTypes.string,
-  hasIcon: PropTypes.bool,
   /**
-   * What background color to use
+   * What type of button is it (primary, secondary, link) ?
    */
-  // backgroundColor: PropTypes.string,
+  type: PropTypes.string,
+  /**
+   * Has the button an icon?
+   */
+  hasIcon: PropTypes.bool,
   /**
    * How large should the button be?
    */
